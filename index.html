@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>About | Roland</title>
+  <title>Roland | Developer Portfolio</title>
   <!-- PLACEHOLDER: add your last name to the title and description if you want it in search results -->
-  <meta name="description" content="About Roland, a Computer Science student at Northwest University and developer of TrackAI.">
+  <meta name="description" content="Roland is a Computer Science student at Northwest University and the developer of TrackAI, a study app that makes college life easier.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600&display=swap">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,8 +20,8 @@
       <a class="brand" href="index.html"><span class="brand-dot" aria-hidden="true"></span>Roland</a>
       <nav aria-label="Main">
         <ul class="nav">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html" aria-current="page">About</a></li>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="work.html">Work</a></li>
           <li><a href="casestudy.html">Case Study</a></li>
           <li><a href="contact.html">Contact</a></li>
@@ -32,71 +32,82 @@
 
   <main id="main">
 
-    <!-- ===== INTRO ===== -->
-    <section class="section">
-      <div class="wrap about-grid">
-        <figure class="shot">
-          <img src="images/roland.jpg" alt="Portrait of Roland standing by a lake" width="1000" height="1333">
-        </figure>
-        <div class="stack">
-          <p class="label">About me</p>
-          <h1>Hi, I'm Roland.</h1>
-          <p class="hero-lede">I'm a Computer Science student at Northwest University with four years of hands-on experience in programming, software development, and project management.</p>
-          <p>I work in Agile and Scrum, collaborate closely with teams, and focus on building technology-based solutions to real-world problems.</p>
-          <p>I contributed to a Technical Project Management project focused on developing a software application. At the same time, I've been building <a href="casestudy.html">TrackAI</a>, a software solution designed to improve the college student experience and make students' lives easier.</p>
-          <p>Developing TrackAI has strengthened my programming, problem-solving, software development, and user-focused design skills. Together, these experiences have built my leadership, communication, teamwork, and project-management abilities.</p>
-          <p>I'm passionate about using technology to create practical, meaningful solutions that make a positive impact.</p>
-          <div class="btn-row">
-            <!-- PLACEHOLDER: upload resume.pdf to your repo, or delete this button -->
-            <a class="btn btn-primary" href="resume.pdf">Download my resume</a>
-            <a class="btn" href="contact.html">Get in touch</a>
-          </div>
+    <!-- ===== HERO: full-width photo with centered headline ===== -->
+    <section class="hero-photo">
+      <img src="images/roland.jpg" alt="" width="1000" height="1333">
+      <div class="wrap">
+        <p class="label">Computer Science &middot; Northwest University</p>
+        <p class="hero-lede">I'm Roland, a Computer Science student with four years of hands-on experience in programming, software development, and project management.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="casestudy.html">See my work</a>
+          <a class="btn" href="contact.html">Get in touch</a>
         </div>
       </div>
     </section>
 
-    <!-- ===== SKILLS ===== -->
+    <!-- ===== QUICK FACTS ===== -->
     <section class="section">
-      <div class="wrap two-col">
-        <div class="stack-sm">
-          <p class="label">Skills</p>
-          <h2>What I work with</h2>
+      <div class="wrap">
+        <dl class="stats">
+          <div><dt>Hands-on experience</dt><dd>4 years</dd></div>
+          <div><dt>Ways of working</dt><dd>Agile &amp; Scrum</dd></div>
+          <div><dt>B.S. Graduation</dt><dd>2027</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ===== FEATURED PROJECT ===== -->
+    <section class="section">
+      <div class="wrap feature">
+        <div class="stack">
+          <p class="label">Featured project</p>
+          <h2>TrackAI</h2>
+          <p class="tagline">Understand Today. Ace Tomorrow.</p>
+          <p>A software solution that brings a student's classes, assignments, grades, and study tools into one place, with AI that turns notes into flashcards and summaries. Building it sharpened my programming, problem-solving, and user-focused design skills.</p>
+          <ul class="chips" aria-label="Technologies">
+            <li>React Native</li><li>Expo</li><li>GitHub Actions</li><li>AI study tools</li>
+          </ul>
+          <div class="btn-row"><a class="btn" href="casestudy.html">How I built it</a></div>
         </div>
-        <ul class="list-plain">
-          <li><strong>Development:</strong> programming, software development, problem-solving, user-focused design</li>
-          <!-- PLACEHOLDER: add or remove languages and tools to match your experience -->
-          <li><strong>Languages &amp; tools:</strong> JavaScript, React Native, Expo, HTML, CSS, Git &amp; GitHub</li>
-          <li><strong>Project management:</strong> Agile, Scrum, planning, team coordination</li>
-          <li><strong>Professional:</strong> leadership, communication, teamwork</li>
-        </ul>
+        <figure class="shot">
+          <div class="logo-panel"><img src="images/trackai-logo.png" alt="TrackAI logo: a graduation cap over a play-button document, with the tagline Understand Today. Ace Tomorrow." width="806" height="714"></div>
+        </figure>
       </div>
     </section>
 
     <!-- ===== EXPERIENCE ===== -->
     <section class="section">
-      <div class="wrap two-col">
-        <div class="stack-sm">
-          <p class="label">Experience</p>
-          <h2>What I've built</h2>
+      <div class="wrap stack">
+        <p class="label">Experience</p>
+        <h2>What I bring to a team</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Software development</h3>
+            <p>Four years of programming and building technology-based solutions to real-world problems, from first idea to working app.</p>
+          </article>
+          <article class="card">
+            <h3>Technical project management</h3>
+            <!-- PLACEHOLDER: name the project and your role if you can share it -->
+            <p>Contributed to a Technical Project Management project developing a software application, working in Agile and Scrum. <span class="todo">Add your role and the outcome.</span></p>
+          </article>
+          <article class="card">
+            <h3>Leadership &amp; teamwork</h3>
+            <p>Strong communication and collaboration skills built by working with teams and leading my own product through every stage.</p>
+          </article>
         </div>
-        <ol class="log">
-          <li><span class="when">May 2026 &ndash; Now</span><span><strong>TrackAI.</strong> Designing and building an app that helps college students manage classes and study smarter.</span></li>
-          <li><span class="when">Oct 2025 &ndash; Dec 2025</span><span><strong>AI Interview Chat.</strong> An app that helps job seekers prepare for interviews.</span></li>
-        </ol>
       </div>
     </section>
 
-    <!-- ===== EDUCATION ===== -->
+    <!-- ===== CLOSING ===== -->
     <section class="section">
       <div class="wrap two-col">
-        <div class="stack-sm">
-          <p class="label">Degrees</p>
-          <h2>Education</h2>
+        <h2>Technology should make a <span class="mark">positive impact.</span></h2>
+        <div class="stack">
+          <p>I'm passionate about using technology to create practical, meaningful solutions. If you're looking for a developer who can write the code and keep the project on track, I'd love to talk.</p>
+          <!-- PLACEHOLDER: say what you're looking for -->
+          <p><span class="todo">Open to: internships / full-time roles / collaborations</span></p>
+          <div class="btn-row"><a class="btn btn-primary" href="contact.html">Contact me</a></div>
         </div>
-        <ol class="log">
-          <li><span class="when">2027</span><span><strong>B.S. Computer Science</strong>, Northwest University</span></li>
-          <li><span class="when">2028</span><span><strong>MBA, Artificial Intelligence</strong>, Northwest University</span></li>
-        </ol>
       </div>
     </section>
   </main>
@@ -107,8 +118,8 @@
       <span>&copy; 2026 Roland</span>
       <!-- PLACEHOLDER: replace with your real profile links -->
       <ul class="footer-links">
-        <li><a href="https://github.com/YOUR-USERNAME">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/YOUR-PROFILE">LinkedIn</a></li>
+        <li><a href="https://github.com/rolandngoy">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/roland-ngoy-5319532a7/">LinkedIn</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
